@@ -1,0 +1,16 @@
+<header> → para el título o logo
+<nav> → para el menú
+<main> → el contenido principal (obligatorio usarlo)
+<section> → dividir el contenido en partes
+<footer> → pie de página
+
+
+<ul>
+Lista **Desordenada** (con viñetas). Los elementos no tienen un orden específico.
+
+<ol>
+Lista **Ordenada** (numérica). Importante cuando el orden de los pasos importa.
+
+<li>
+**Elemento de Lista**. Es la caja individual que vive dentro de un ul o ol.\
+
