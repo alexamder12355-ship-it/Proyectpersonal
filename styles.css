@@ -109,10 +109,10 @@ main{
 }
 
 .logop{
-    width: 800px;
+    max-width: 100%;
+    height: auto;
     border-radius: 500px;
-    padding: 20px 20px 0px 20px;
-   
+    padding: 20px;
 }
 
 /* --- solo es es el texto de la parte de arriba de la imagen y una mass abajo --- */
@@ -231,8 +231,8 @@ main{
 
 .bio-content {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Permitir que se ajuste en pantallas pequeñas */
+    justify-content: center;
     gap: 40px;
     align-items: center;
     background-color: var(--seg-color);
@@ -329,6 +329,49 @@ main{
     padding: 40px 20px;
 }
 
+/* --- MEDIA QUERIES PARA RESPONSIVIDAD --- */
+
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 35px;
+        padding-bottom: 40px;
+    }
+
+    .h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .car {
+        width: 100%; /* Las cajas de marcas ahora ocupan todo el ancho */
+        margin-bottom: 20px;
+    }
+
+    .bio-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .bio-text {
+        text-align: center;
+    }
+
+    .section-box {
+        width: 100%;
+    }
+
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+}
 
 
      
